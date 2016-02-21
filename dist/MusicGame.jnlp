@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MusicGame.jnlp">
+  <information>
+    <title>MusicGame</title>
+    <vendor>Daniel</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="lib\MusicGame-Preloader.jar" size="3036" download="progress" />
+    <jar href="MusicGame.jar" size="169909" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MusicGame" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="musicgame.MusicGame"  name="MusicGame"  preloader-class="musicgame.preloader.MusicGame_Preloader"/>
+  <update check="always"/>
+</jnlp>
